@@ -1,0 +1,126 @@
+@font-face {
+    font-family: iransans;
+    src: url('C:/Users/ALIREZA/Desktop/projects/Snapp/font/IRANSansWeb(FaNum)_Light.ttf');
+  }
+  * {
+    margin: 0;
+    font-family: iransans;
+    user-select: none;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00ffff;
+  }
+  .con {
+    
+    width: 30%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 15px blueviolet;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  button {
+    width: 10%;
+    aspect-ratio: 1;
+    border-style: none;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s;
+    opacity: 1;
+    visibility: visible;
+  }
+  .buttons button {
+    border-radius: 5px;
+  }
+  .title_bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .start_btn,
+  .restart_btn {
+    width: 110px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    box-shadow: 0px 0px 15px blueviolet;
+    border-radius: 10px;
+    background-color: yellow;
+    transition: .4s;
+  }
+  .start_btn:active,
+  .restart_btn:active{
+    transform: scale(.9);
+  }
+  .restart_btn {
+    display: none;
+  }
+  .title_bar {
+    height: 70px;
+  }
+  .title_bar span{
+    font-size: 19px;
+    display: inline-block;
+    padding: 5px;
+    transition: 1s;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-delay: 0s;
+  }
+  .header_bar {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @keyframes fontsize {
+    0%{
+      font-size: 19px;
+    }
+    50%{
+      font-size: 20px;
+    }
+    100%{
+      font-size: 19px;
+    }
+  }
+  @media screen and (max-width: 760px) {
+    .container{
+      height: 100vh;
+      overflow-y: hidden;
+    }
+    .con {
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 950px) and (orientation:landscape){
+    .buttons button{
+      width: 4.3%;
+    }
+    .con{
+      width: 90%;
+    }
+  }

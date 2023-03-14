@@ -66,7 +66,7 @@ a.forEach(function (buttons) {
       restart_btn.style.display = "block";
     }
     if (isstart == true && timecounter > 0 && tempcounter == 0) {
-      ejuction_label.innerHTML = "شما برنده شدین";
+      ejuction_label.innerHTML = "شما برنده شدید";
       isstart = false;
       restart_btn.style.display = "block";
     }

@@ -82,6 +82,7 @@ button {
   height: 70px;
 }
 .title_bar span {
+  width: 50%;
   font-size: 19px;
   display: inline-block;
   padding: 5px;
@@ -89,6 +90,13 @@ button {
   animation-iteration-count: infinite;
   animation-duration: 1s;
   animation-delay: 0s;
+  padding: 0 15px;
+}
+.title_bar span:first-child{
+  text-align: left;
+}
+.title_bar span:last-child{
+  text-align: right;
 }
 .header_bar {
   height: 70px;

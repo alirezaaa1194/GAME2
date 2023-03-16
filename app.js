@@ -38,7 +38,7 @@ start_btn.addEventListener("click", () => {
       timecounter--;
       timelabel.innerHTML = "زمان: " + timecounter;
     }
-    if (timecounter <= 5) {
+    if (isstart==true && timecounter <= 5) {
       timelabel.style.color = "red";
       timelabel.style.animationName = "fontsize";
       window.navigator.vibrate(120);

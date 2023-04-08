@@ -15,19 +15,19 @@ let isstart = false;
 low_level_button.addEventListener("click", function () {
   container.style.display = "flex";
   level_container.style.display = "none";
-  timecounter = 20;
+  timecounter = 15;
   timelabel.innerHTML = "زمان: " + timecounter;
 });
 middle_level_button.addEventListener("click", function () {
   container.style.display = "flex";
   level_container.style.display = "none";
-  timecounter = 13;
+  timecounter = 10;
   timelabel.innerHTML = "زمان: " + timecounter;
 });
 high_level_button.addEventListener("click", function () {
   container.style.display = "flex";
   level_container.style.display = "none";
-  timecounter = 10;
+  timecounter = 6;
   timelabel.innerHTML = "زمان: " + timecounter;
 });
 start_btn.addEventListener("click", () => {
